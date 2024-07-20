@@ -53,8 +53,7 @@
   font-family: Arial, sans-serif;
   line-height: 30px;
   list-style-type: none;
-  display:inline-block;
-  
+  display:inline-block;  
 }
 
 /* стиль для раздела About me -----------------------------------------*/
@@ -71,7 +70,6 @@
   box-shadow: 10px 10px 30px 10px #747474;
   margin:10px auto;
 }
-
 
 .about_me_header {
   flex: none;

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<title>Alexander Bogonosov_CV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+
+
+<div class="avatar">
+  <img class="avatar_img" src="images/DSC03817_crop.jpg" alt="Alexander Bogonosov avatar">
+  <div class="line_avatar" style="height: 330px; width: 0; border-right: 5px solid #270303;"></div> 
+  <div class="contakts">
+    <h1 class="fio">Alexander Bogonosov</h1>
+    <p class="contact_information">Contact information:</p>
+    <p class="contact_information_item"><img src="images/location_icon.png" alt="location_ico" width="18"> Location: Vitebsk, Belarus</p>
+    <p class="contact_information_item"><img src="images/email_icon.png" alt="e-mail_ico" width="18"> e-mail: <a href="mailto:maximus999@tut.by">maximus999@tut.by</a></p>
+    <p class="contact_information_item"><img src="images/telegram_icon.png" alt="telegram_ico" width="18"> Telegram: <a href="tg://resolve?domain=@Maximus9991982">@Maximus9991982</a></p>
+  </div>
+  <div class="line_avatar" style="height: 330px; width: 0; border-right: 5px solid #270303;"></div>
+  <div>
+    <nav>
+      <ul class="avatar_menu">
+      <li><a href="#about_me">About me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#сourses">Courses</a></li>
+      <li><a href="#skills">My skills</a></li>
+      <li><a href="#my_projects">My projects</a></li>
+      <li><a href="#code_example">Code example</a></li>
+      <li><a href="#languages">Languages</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<br>
+
+<div class="about_me" id="about_me">
+  <div><h2 class="about_me_header">About me:</h2></div>
+  <div class="line_about_me" style="height: 130px; width: 0; border-right: 5px solid #270303;"></div> 
+  <div>	
+    <p class="about_me_item"><i>I’m 42 years old. I have being working at Beltelecom as an engineer since 2005. 
+		My goal is to make my life better. Want to learn new. Diligent. Responsible.</i></p>    
+    <p class="about_me_item"><i>Less words, more action.</i></p>
+  </div>
+</div>
+
+
+<br>
+
+<div class="education" id="education">
+  <div><h2 class="education_header">Education:</h2></div>
+  <div class="line_education" style="height: 80px; width: 0; border-right: 5px solid #270303;"></div>
+  <div>
+    <p class="education_item"><i>Belorussian Academy of communications 1999 - 2005 (specialization: telecommunication network software, studied: C, C++, HTML, JS, PHP, SQL, Pascal, VB)</i></p>
+  </div>
+</div>
+
+<br>
+
+<div class="сourses" id="сourses">
+  <div class="сourses_header"><h4>Courses:</h4></div>
+  <div class="line_сourses" style="height: 40px; width: 0; border-right: 5px solid #270303;"></div>
+  <div> 
+    <ul class="сourses_item">
+      <li><i>JS/FE Pre-school 2024 Q2 (in progress)</i></li>  
+    </ul>
+  </div>
+  </div>
+
+<br>
+
+<div class="skills" id="skills">
+  <div class="skills_header"><h4>My skills:</h4></div>
+  <div class="line_skills" style="height: 125px; width: 0; border-right: 5px solid #270303;"></div>
+  <div> 
+    <ul class="skills_item">
+      <li><i>C++ (beginer)</i></li>  
+      <li><i>HTML (beginer)</i></li>
+      <li><i>JS (beginer)</i></li>
+      <li><i>CSS (beginer)</i></li>
+      <li><i>VBA (amateur)</i></li>
+    </ul>
+  </div>
+  </div>
+
+<br>
+
+<div class="my_projects" id="my_projects">
+  <div class="my_projects_header"><h4>My projects:</h4></div>
+  <div class="line_my_projects" style="height: 40px; width: 0; border-right: 5px solid #270303;"></div>
+  <div>
+    <ul class="my_projects_item">
+      <li><i><a href="https://maximus9991982.github.io/rsschool-cv/cv">My CV (markdown)</a></i></li>  
+      <li><i><a href="https://maximus9991982.github.io/rsschool-cv">My CV (html)</a></i></li>
+    </ul>
+  </div>
+</div>
+
+<br>
+
+<div class="code_example" id="code_example">
+  <div class="code_example_header"><h4>Code example:</h4></div>
+  <div class="line_code_example" style="height: 90px; width: 0; border-right: 5px solid #270303;"></div>
+  <div>
+    <p class="code_example_item"><i>This is my last VBA-macro, which makes my routine job easer:</i></p>
+    
+    <details>
+      <summary class="code_example_item">View code (click to see)</summary>
+      <div>
+      
+      <pre>
+      <code  class="code_example_code">
+	Sub PenaltyCalculationAndDate()  
+        '' макрос для автоматического расчета, 
+        '' вводим вручную только первые 2 месяца
+	If MsgBox("Произвести расчет?", vbQuestion + vbYesNo) = 6 Then
+
+	Dim isEmptyGraph As Boolean
+	Dim GraphColumn As Integer
+
+	Application.ScreenUpdating = False
+
+	isEmptyGraph = False
+	valueColumn = 14
+
+	Range("O5:AC5").Select
+	Selection.ClearContents
+	Range("M6:AC6").Select
+	Selection.ClearContents
+	Range("M5:M5").Select
+    
+	'' Заполняем график датами иэ эталонных значений
+	Do
+	Cells(5, valueColumn + 1) = Cells(9, valueColumn + 1)
+	valueColumn = valueColumn + 1
+	Loop While Cells(5, valueColumn) &#60; &#61; Cells(3, 15)
+	
+	'' проверка на выходные
+	valueColumn = 13
+	Do
+	If Weekday(Cells(5, valueColumn), vbMonday) = 6 Then
+	Cells(5, valueColumn) = Cells(5, valueColumn) - 1
+	Else
+	If Weekday(Cells(5, valueColumn), vbMonday) = 7 Then
+	Cells(5, valueColumn) = Cells(5, valueColumn) - 2
+	End If
+	End If
+	valueColumn = valueColumn + 1
+	Loop While Cells(5, valueColumn) &#60; &#61; Cells(3, 15)
+	
+	valueColumn = 13
+	Do        
+        '' копируем дату из графика в расчет
+	Cells(4, 6) = Cells(5, valueColumn) 
+        '' копируем значение штрафа в график
+	Cells(6, valueColumn) = Cells(24, 10)  
+	valueColumn = valueColumn + 1
+      
+       '' проверяем закончились ли даты в графике
+	If Cells(5, valueColumn) = Empty Then  
+	isEmptyGraph = True
+	End If
+            
+	Loop While (Not isEmptyGraph)
+	End If
+
+	Application.ScreenUpdating = True
+	End Sub
+
+  </code>
+  </pre> 
+  </div>
+  </details>
+  </div>
+</div>
+
+<br>
+
+<div class="languages" id="languages">
+  <div class="languages_header"><h4>Languages:</h4></div>
+  <div class="line_languages" style="height: 180px; width: 0; border-right: 5px solid #270303;"></div>
+  <div>
+    <ul class="languages_item">
+      <li>
+        <p><i>English (Upper-Intermediate (B2), according to online test: <a href="https://puzzle-english.com">Puzzle English</a> )</i></p>
+        <details>
+          <summary>View test result (click to see)</summary>
+          <div>
+            <img src="https://sun9-53.userapi.com/impg/sFJuQHHOy-9dHbVdq1PCmHgPA5dXdR4xuvCy_g/dqxXj4vdAjo.jpg?size=1211x375&quality=95&sign=9ef373885ae1e5117e85c33bce05f93b&type=album" alt="Alexander Bogonosov English-test result screenshot" width="700" height="217">
+          </div>
+        </details>
+      </li>       
+      <li><i>Belarussian (native)</i></li>
+      <li><i>Russian (native)</i></li> 
+    </ul>
+  </div>
+</div>
+
+<br>
+
+<footer>
+  <div class="footer">
+    <div class="footer_item"><a href="https://github.com/Maximus9991982">My Github</a></div>  
+    <div class="footer_item">2024</div>
+    <div class="footer_item"><a href="https://rs.school/courses/javascript-ru"><img src="https://rs.school/assets/html-ICuzc4H5.webp" alt="JS course logo" width="64" height="64"></a></div>
+  </div>
+</footer>
+
+</body>
+
+</html>
